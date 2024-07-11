@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "valorant-app-api", "valorant-app-api\valorant-app-api.csproj", "{876A9E3F-B699-438D-A95C-CF889F44ADCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{876A9E3F-B699-438D-A95C-CF889F44ADCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876A9E3F-B699-438D-A95C-CF889F44ADCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876A9E3F-B699-438D-A95C-CF889F44ADCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876A9E3F-B699-438D-A95C-CF889F44ADCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {847E6CE1-A86B-4640-980C-E37BCF018995}
+	EndGlobalSection
+EndGlobal

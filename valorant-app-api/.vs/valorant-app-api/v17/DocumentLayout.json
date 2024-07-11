@@ -1,0 +1,299 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\controllers\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\controllers\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\repository\\characterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\repository\\characterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\repository\\icharacterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\repository\\icharacterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\data\\valueobject\\mapvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\data\\valueobject\\mapvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\data\\valueobject\\matchvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\data\\valueobject\\matchvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\config\\mappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\config\\mappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\repository\\imatchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\repository\\imatchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\repository\\imaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\repository\\imaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\repository\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\repository\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\model\\context\\mysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\model\\context\\mysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\model\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\model\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\model\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\model\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\model\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\model\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|c:\\users\\felip\\onedrive\\documentos\\projeto valorant\\valorant-app-api\\valorant-app-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{876A9E3F-B699-438D-A95C-CF889F44ADCE}|valorant-app-api\\valorant-app-api.csproj|solutionrelative:valorant-app-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MatchVO.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Data\\ValueObject\\MatchVO.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Data\\ValueObject\\MatchVO.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Data\\ValueObject\\MatchVO.cs",
+              "RelativeToolTip": "valorant-app-api\\Data\\ValueObject\\MatchVO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:26:56.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterController.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Controllers\\CharacterController.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Controllers\\CharacterController.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Controllers\\CharacterController.cs",
+              "RelativeToolTip": "valorant-app-api\\Controllers\\CharacterController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T16:18:32.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MapVO.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Data\\ValueObject\\MapVO.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Data\\ValueObject\\MapVO.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Data\\ValueObject\\MapVO.cs",
+              "RelativeToolTip": "valorant-app-api\\Data\\ValueObject\\MapVO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:19:37.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MatchController.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Controllers\\MatchController.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Controllers\\MatchController.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Controllers\\MatchController.cs",
+              "RelativeToolTip": "valorant-app-api\\Controllers\\MatchController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwCoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:00:25.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICharacterRepository.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\ICharacterRepository.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Repository\\ICharacterRepository.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\ICharacterRepository.cs",
+              "RelativeToolTip": "valorant-app-api\\Repository\\ICharacterRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T17:35:54.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CharacterRepository.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\CharacterRepository.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Repository\\CharacterRepository.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\CharacterRepository.cs",
+              "RelativeToolTip": "valorant-app-api\\Repository\\CharacterRepository.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T17:35:51.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MappingConfig.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Config\\MappingConfig.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Config\\MappingConfig.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Config\\MappingConfig.cs",
+              "RelativeToolTip": "valorant-app-api\\Config\\MappingConfig.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:31:42.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMapRepository.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\IMapRepository.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Repository\\IMapRepository.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\IMapRepository.cs",
+              "RelativeToolTip": "valorant-app-api\\Repository\\IMapRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:32:14.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Person.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Model\\Person.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Person.cs",
+              "RelativeToolTip": "valorant-app-api\\Model\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T16:37:35.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMatchRepository.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\IMatchRepository.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Repository\\IMatchRepository.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\IMatchRepository.cs",
+              "RelativeToolTip": "valorant-app-api\\Repository\\IMatchRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:27:52.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Program.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Program.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Program.cs",
+              "RelativeToolTip": "valorant-app-api\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:09:37.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Character.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Model\\Character.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Character.cs",
+              "RelativeToolTip": "valorant-app-api\\Model\\Character.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:08:35.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MySQLContext.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Context\\MySQLContext.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Model\\Context\\MySQLContext.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Context\\MySQLContext.cs",
+              "RelativeToolTip": "valorant-app-api\\Model\\Context\\MySQLContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:08:29.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Map.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Map.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Model\\Map.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Map.cs",
+              "RelativeToolTip": "valorant-app-api\\Model\\Map.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:07:52.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\appsettings.json",
+              "RelativeDocumentMoniker": "valorant-app-api\\appsettings.json",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\appsettings.json",
+              "RelativeToolTip": "valorant-app-api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-11T15:02:14.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Match.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Model\\Match.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Model\\Match.cs",
+              "RelativeToolTip": "valorant-app-api\\Model\\Match.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:01:45.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MatchRepository.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\MatchRepository.cs",
+              "RelativeDocumentMoniker": "valorant-app-api\\Repository\\MatchRepository.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\Projeto Valorant\\valorant-app-api\\valorant-app-api\\Repository\\MatchRepository.cs",
+              "RelativeToolTip": "valorant-app-api\\Repository\\MatchRepository.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAqwDEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:39:12.999Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

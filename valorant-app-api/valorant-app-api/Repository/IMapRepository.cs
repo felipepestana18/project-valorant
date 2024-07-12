@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using valorant_app_api.Data.ValueObject;
+using valorant_app_api.Model;
 
 namespace valorant_app_api.Repository
 {
@@ -15,5 +16,9 @@ namespace valorant_app_api.Repository
         Task<MapVO> Update(MapVO vo);
 
         Task<bool> Delete(int id);
+
+        Task<MapsApi> GetMapsApi();
+
+        Task<MapsApi> GetMapApiByUid(string uid);
     }
 }

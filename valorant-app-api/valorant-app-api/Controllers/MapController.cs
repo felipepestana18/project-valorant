@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using valorant_app_api.Data.ValueObject;
+using valorant_app_api.Model;
 using valorant_app_api.Repository;
 
 namespace valorant_app_api.Controllers
@@ -56,6 +58,22 @@ namespace valorant_app_api.Controllers
             var status = await _mapRepository.Delete(id);
             if (!status) BadRequest();
             return Ok(status);
+        }
+
+        [HttpGet("get-maps-api")]
+        public async Task<ActionResult<MapsApi>> GetMapApi()
+        {
+            var agents = await _mapRepository.GetMapsApi();
+            if (agents == null) BadRequest();
+            return Ok(agents);
+        }
+
+        [HttpGet("get-maps-api/{uid}")]
+        public async Task<ActionResult<MapsApi>> GetMapApiByUid(string uid)
+        {
+            var agent = await _mapRepository.GetMapApiByUid(uid);
+            if (agent == null) BadRequest();
+            return Ok(agent);
         }
 
     }

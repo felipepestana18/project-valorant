@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using valorant_app_api.Data.ValueObject;
+using valorant_app_api.Model;
 using valorant_app_api.Model.Context;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace valorant_app_api.Repository
 {
@@ -57,6 +60,27 @@ namespace valorant_app_api.Repository
             return true;
         }
 
+        public async Task<MapsApi> GetMapsApi()
+        {
+            HttpClient httpClient = new HttpClient();
+            using HttpResponseMessage response = await httpClient.GetAsync("https://valorant-api.com/v1/maps");
+            response.EnsureSuccessStatusCode();
+            string responseBody = await response.Content.ReadAsStringAsync();
+            var maps = JsonSerializer.Deserialize<MapsApi>(responseBody);
+            return maps;
+        }
 
+        public async Task<MapsApi> GetMapApiByUid(string uid)
+        {
+            MapVO vo = new MapVO();
+            HttpClient httpClient = new HttpClient();
+            using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/maps{uid}");
+            response.EnsureSuccessStatusCode();
+            string responseBody = await response.Content.ReadAsStringAsync();
+            var map = JsonSerializer.Deserialize<MapsApi>(responseBody);
+            return map;
+        }
+
+ 
     }
 }

@@ -72,12 +72,12 @@ namespace valorant_app_api.Controllers
             return Ok(agents);
         }
 
-        [HttpGet("get-agent-uid")]
-        public async Task<ActionResult<JsonObject>> GetAgentById()
+        [HttpGet("get-agent/{uid}")]
+        public async Task<ActionResult<JsonObject>> GetAgentByUid(string uid)
         {
-            var agents = await _characterRepository.GetAgent();
-            if (agents == null) BadRequest();
-            return Ok(agents);
+            var agent = await _characterRepository.GetAgentByUid(uid);
+            if (agent == null) BadRequest();
+            return Ok(agent);
         }
     }
 }

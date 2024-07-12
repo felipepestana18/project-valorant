@@ -64,9 +64,18 @@ namespace valorant_app_api.Repository
             using HttpResponseMessage response = await httpClient.GetAsync("https://valorant-api.com/v1/agents");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
-            var person = JsonSerializer.Deserialize<JsonObject>(responseBody);
+            var agents = JsonSerializer.Deserialize<JsonObject>(responseBody);
+            return agents;
+        }
 
-            return person;
+        public async Task<JsonObject> GetAgentByUid(string uid)
+        {
+            HttpClient httpClient = new HttpClient();
+            using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/agents/{uid}");
+            response.EnsureSuccessStatusCode();
+            string responseBody = await response.Content.ReadAsStringAsync();
+            var agent = JsonSerializer.Deserialize<JsonObject>(responseBody);
+            return agent;
         }
     }
 }

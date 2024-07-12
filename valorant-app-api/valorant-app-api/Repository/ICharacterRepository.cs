@@ -17,5 +17,7 @@ namespace valorant_app_api.Repository
         Task<bool> Delete(int id);
 
         Task<JsonObject> GetAgent();
+
+        Task<JsonObject> GetAgentByUid(string uid);
     }
 }

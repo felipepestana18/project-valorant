@@ -15,7 +15,8 @@ import { AgentCreateComponent } from './agent-create/agent-create.component';
     
   ],
   exports: [
-    AgentDashboardComponent
+    AgentDashboardComponent,
+    AgentCreateComponent
   ]
 })
 export class AgentsModule { }

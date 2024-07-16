@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-maps-dashboard',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class MapsDashboardComponent {
 
+  constructor(private router: Router){}
+  
+  createMap(){
+    this.router.navigateByUrl('maps/create');
+  }
 }

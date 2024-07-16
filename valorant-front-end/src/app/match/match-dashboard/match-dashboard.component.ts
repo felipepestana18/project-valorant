@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class MatchDashboardComponent {
 
+
+  InformationAboutMatch(){
+    console.log("podemos sorrir!");
+  }
+
+  createNewMatch(){
+    
+  }
+
 }

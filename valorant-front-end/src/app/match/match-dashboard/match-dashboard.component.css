@@ -1,0 +1,39 @@
+.border-custom{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    margin: 3.0%;
+    background-color: (236, 232, 225);
+}
+
+.border-card{
+    cursor: pointer;
+    height: 360px;
+    margin : 1%;
+   
+    background-color:#151F30;
+}
+img{
+    object-fit: cover;  
+}
+
+h5{
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 8px;
+    font-style: normal;
+    color: #ffff;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap; 
+    
+    flex-direction: row; 
+}
+.flex {
+    display: inline;
+    flex: 5px;
+}

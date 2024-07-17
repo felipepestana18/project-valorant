@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-match-dashboard',
@@ -7,13 +8,14 @@ import { Component } from '@angular/core';
 })
 export class MatchDashboardComponent {
 
+  constructor(private router: Router){}
 
   InformationAboutMatch(){
     console.log("podemos sorrir!");
   }
-
+  
   createNewMatch(){
-    
+    this.router.navigateByUrl('match/create');
   }
 
 }

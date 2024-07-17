@@ -1,17 +1,18 @@
 .border-custom{
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 3%;
+
     border: 1px solid #ced4da;
     border-radius: 10px;
-    margin: 3.0%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 4%;
     background-color: (236, 232, 225);
+    background-color: #fff;
 }
 
 .border-card{
     cursor: pointer;
     height: 360px;
-    margin : 1%;
+    margin : 0.5%;
    
     background-color:#151F30;
 }
@@ -36,4 +37,8 @@ h5{
 .flex {
     display: inline;
     flex: 5px;
+}
+
+.margin-buttons{
+    margin: 2%
 }

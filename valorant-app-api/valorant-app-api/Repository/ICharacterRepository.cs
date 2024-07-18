@@ -1,5 +1,6 @@
 ﻿using System.Text.Json.Nodes;
 using valorant_app_api.Data.ValueObject;
+using valorant_app_api.Model;
 
 namespace valorant_app_api.Repository
 {
@@ -16,8 +17,8 @@ namespace valorant_app_api.Repository
 
         Task<bool> Delete(int id);
 
-        Task<JsonObject> GetAgent();
+        Task<Rootobject> GetAgent();
 
-        Task<JsonObject> GetAgentByUid(string uid);
+        Task<Rootobject> GetAgentByUid(string uid);
     }
 }

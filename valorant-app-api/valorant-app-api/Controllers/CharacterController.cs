@@ -13,7 +13,7 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 namespace valorant_app_api.Controllers
 {
     [ApiController]
-    [Route("api/v1/character")]
+    [Route("api/v1/agent")]
     public class CharacterController : Controller
     {
         readonly ICharacterRepository _characterRepository;

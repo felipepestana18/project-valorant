@@ -1,4 +1,6 @@
 ﻿using Newtonsoft.Json;
+using System.Text.Json.Serialization;
+using JsonIgnoreAttribute = Newtonsoft.Json.JsonIgnoreAttribute;
 
 namespace valorant_app_api.Model
 {
@@ -14,21 +16,34 @@ public class Datum
     public string uuid { get; set; }
     public string displayName { get; set; }
     public string description { get; set; }
+    public string fullPortrait { get; set; }
+    public string displayIcon { get; set; }
+    [JsonIgnore]
     public string developerName { get; set; }
     public string[] characterTags { get; set; }
-    public string displayIcon { get; set; }
+    [JsonIgnore]
     public string displayIconSmall { get; set; }
+    [JsonIgnore]
     public string bustPortrait { get; set; }
-    public string fullPortrait { get; set; }
+    [JsonIgnore]
     public string fullPortraitV2 { get; set; }
+    [JsonIgnore]
     public string killfeedPortrait { get; set; }
+    [JsonIgnore]
     public string background { get; set; }
+    [JsonIgnore]
     public string[] backgroundGradientColors { get; set; }
+    [JsonIgnore]
     public string assetPath { get; set; }
+    [JsonIgnore]
     public bool isFullPortraitRightFacing { get; set; }
+    [JsonIgnore]
     public bool isPlayableCharacter { get; set; }
+    [JsonIgnore]
     public bool isAvailableForTest { get; set; }
+    [JsonIgnore]
     public bool isBaseContent { get; set; }
+    [JsonIgnore]
     public Role role { get; set; }
     //public Recruitmentdata recruitmentData { get; set; }
     /*    public Ability[] abilities { get; set; }*/

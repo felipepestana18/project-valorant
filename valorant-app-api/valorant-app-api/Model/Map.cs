@@ -5,6 +5,8 @@
 
         public int Id { get; set; } 
 
+        public string uuid { get; set; }
+
         public string Name { get; set; }
     }
 }

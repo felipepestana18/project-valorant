@@ -5,6 +5,8 @@ namespace valorant_app_api.Model
     {
         public int Id { get; set; }
 
+        public string uui { get; set; }
+
         public string Name { get; set; }
 
         public string Function { get; set; }

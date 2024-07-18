@@ -2,7 +2,9 @@
 {
     public class CharacterVO
     {
-     public int Id { get; set; }
+        public int Id { get; set; }
+
+        public string uui { get; set; }
 
         public string Name { get; set; }
 

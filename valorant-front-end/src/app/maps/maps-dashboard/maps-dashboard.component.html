@@ -13,22 +13,10 @@
         <th scope="col">Delete</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody *ngFor="let map of maps"> 
       <tr>
-        <th scope="row">1</th>
-        <td>Facture</td>
-        <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
-        <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Bind</td>
-        <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
-        <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Ascent</td>
+        <th scope="row">{{map.id}}</th>
+        <td>{{map.name}}</td>
         <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
         <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
       </tr>

@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
-import { Root } from '../model/agentAPI';
+import { Root } from '../model/mapAPI';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AgentService {
+export class MapService {
 
-  private url: string = "http://localhost:5106/api/v1/agent/";
+  private url: string = "http://localhost:5106/api/v1/map/";
 
   constructor(private http: HttpClient) { }
 
@@ -18,8 +18,8 @@ export class AgentService {
     })
   }
 
-  public getAgentDataApi(): Observable<Array<Root>> {
-    return this.http.get<Array<Root>>(`${this.url}get-agent`)
+  public getMapsDataApi(): Observable<Array<Root>> {
+    return this.http.get<Array<Root>>(`${this.url}get-maps-api`)
       .pipe(
         res => res,
         error => error
@@ -31,7 +31,13 @@ export class AgentService {
  // }
 
   getDataAgent() {
+
     return this.http.get(this.url + 'get-all')
+  }
+
+
+  getDataMap(){
+    return this.http.get(this.url + 'find-all')
   }
 
   postData(data: any) {

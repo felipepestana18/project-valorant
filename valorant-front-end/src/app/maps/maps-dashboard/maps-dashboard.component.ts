@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MapService } from '../services/maps.service';
 
 @Component({
   selector: 'app-maps-dashboard',
@@ -8,8 +9,19 @@ import { Router } from '@angular/router';
 })
 export class MapsDashboardComponent {
 
-  constructor(private router: Router){}
+  constructor(private MapService: MapService, private router: Router){}
   
+  maps: any;
+  
+  ngOnInit(): void {
+    this.getDataMap();
+  }
+  getDataMap(){
+    this.MapService.getDataMap().subscribe((data: any) => {
+ 
+      this.maps = data
+    })
+  }
   createMap(){
     this.router.navigateByUrl('maps/create');
   }

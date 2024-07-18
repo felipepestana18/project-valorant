@@ -69,7 +69,7 @@ namespace valorant_app_api.Controllers
         }
 
         [HttpGet("get-maps-api/{uid}")]
-        public async Task<ActionResult<MapsApi>> GetMapApiByUid(string uid)
+        public async Task<ActionResult<JsonObject>> GetMapApiByUid(string uid)
         {
             var agent = await _mapRepository.GetMapApiByUid(uid);
             if (agent == null) BadRequest();

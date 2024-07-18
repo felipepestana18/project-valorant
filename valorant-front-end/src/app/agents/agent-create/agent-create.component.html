@@ -3,26 +3,28 @@
         <h4 class="text-center">Create - Agent</h4>
         <div class="border-0" class="">
             <label for="exampleFormControlInput1" class="form-label">Select the Agent</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="exampleFormControlSelect1" (change)="onChange()" [(ngModel)]="uui">
                 <option selected>Please, select the agent</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option *ngFor="let agent of data" [ngValue]="agent.uuid">
+                    {{agent.displayName}}
+                </option>
             </select>
         </div>
-        <div class="d-flex align-items-start">
-            <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png" alt="..." height="200px" width="200px" class="img-thumbnail">
-            <div class="d-flex flex-column bd-highlight flex-element">
-             <p>Name: <span><b>Gekko</b></span></p>
-             <p>Function: <span><b>Sentinela</b></span></p>
-             <p>Description: <span><b>Sentinela</b></span></p>
-           </div>
-       </div>
-       <hr>
-       <div class="text-end">
-            <button type="button" class=" btn btn-success"> Create Agent</button>
+        <div *ngIf="uui">
+            <div class="d-flex align-items-start">
+
+                <img src={{displayIcon}} alt="..." height="200px" width="200px" class="img-thumbnail">
+                <div class="d-flex flex-column bd-highlight flex-element">
+                    <p>Name: <span><b>{{displayName}}</b></span></p>
+                    <p>Function: <span><b>{{function}}</b></span></p>
+                    <p>Description: <span><b>{{description}}</b></span></p>
+                </div>
+            </div>
+
+            <hr>
+            <div class="text-end">
+                <button type="button" class=" btn btn-success"  (click)="saveAgent()"> Create Agent</button>
+            </div>
         </div>
     </div>
 </div>

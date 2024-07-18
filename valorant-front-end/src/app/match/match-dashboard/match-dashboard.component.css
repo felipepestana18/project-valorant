@@ -1,0 +1,52 @@
+.border-custom{
+
+    border: 0.5px solid #6c757d;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 4%;
+    background-color: var(--bs-body-bg);
+}
+
+.border-card{
+    cursor: pointer;
+    height: 360px;
+    margin : 0.5%;
+   
+    background-color:#151F30;
+}
+img{
+    object-fit: cover;  
+}
+
+h5{
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: 8px;
+    font-style: normal;
+    color: #ffff;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap; 
+    
+    flex-direction: row; 
+}
+.flex {
+    display: inline;
+    flex: 5px;
+}
+
+.margin-buttons{
+    margin: 2%
+}
+
+/* Sepia */
+.hover  img {
+	opacity: 2;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	opacity: .4;
+}

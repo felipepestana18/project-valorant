@@ -14,25 +14,11 @@
         <th scope="col">Delete</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody *ngFor="let agent of agents">
       <tr>
-        <th scope="row">1</th>
-        <td>Gekko</td>
-        <td>Sentinela</td>
-        <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
-        <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
-        <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>Larry</td>
+        <th scope="row">{{agent.id}}</th>
+        <td>{{agent.name}}</td>
+        <td>{{agent.function}}</td>
         <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
         <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
       </tr>

@@ -1,1 +1,25 @@
-<p>maps-dashboard works!</p>
+<div class="border-custom">
+    <h4 class="text-center">Dashboard - Maps</h4>
+    <div class="text-end">
+            <button type="button" class=" btn btn-primary" (click)="createMap()"> Create Map</button>
+    </div>
+<hr>
+<table class="table">
+  <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let map of maps"> 
+      <tr>
+        <th scope="row">{{map.id}}</th>
+        <td>{{map.name}}</td>
+        <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
+        <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

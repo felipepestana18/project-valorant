@@ -58,23 +58,23 @@ namespace valorant_app_api.Repository
             return true;
         }
 
-        public async Task<JsonObject> GetAgent()
+        public async Task<Rootobject> GetAgent()
         {
             HttpClient httpClient = new HttpClient();
             using HttpResponseMessage response = await httpClient.GetAsync("https://valorant-api.com/v1/agents");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
-            var agents = JsonSerializer.Deserialize<JsonObject>(responseBody);
+            var agents = JsonSerializer.Deserialize<Rootobject>(responseBody);
             return agents;
         }
 
-        public async Task<JsonObject> GetAgentByUid(string uid)
+        public async Task<Rootobject> GetAgentByUid(string uid)
         {
             HttpClient httpClient = new HttpClient();
             using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/agents/{uid}");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
-            var agent = JsonSerializer.Deserialize<JsonObject>(responseBody);
+            var agent = JsonSerializer.Deserialize<Rootobject>(responseBody);
             return agent;
         }
     }

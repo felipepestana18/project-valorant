@@ -2,14 +2,16 @@
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 8%;
-    padding-right: 20%;
+    padding-right: 8%;
 }
 
 .border-custom{
     padding: 5%;
-    border: 1px solid #ced4da;
+    border: 1px solid #6c757d;
     border-radius: 10px;
+    background-color: var(--bs-body-bg);
 }
+
 .flex .img-thumb{
     margin: 3px;
 }
@@ -20,6 +22,6 @@
 }
 
 .flex-element{
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: 5px;
 }

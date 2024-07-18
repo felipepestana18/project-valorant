@@ -4,8 +4,9 @@
     {
         public int status { get; set; }
         public Datum[] data { get; set; }
-    }
 
+
+    }
     public class Datum
     {
         public string uuid { get; set; }
@@ -40,5 +41,6 @@
         public float x { get; set; }
         public float y { get; set; }
     }
+
 
 }

@@ -19,6 +19,6 @@ namespace valorant_app_api.Repository
 
         Task<MapsApi> GetMapsApi();
 
-        Task<MapsApi> GetMapApiByUid(string uid);
+        Task<InformationMap> GetMapApiByUid(string uid);
     }
 }

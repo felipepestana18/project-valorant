@@ -70,14 +70,13 @@ namespace valorant_app_api.Repository
             return maps;
         }
 
-        public async Task<MapsApi> GetMapApiByUid(string uid)
+        public async Task<InformationMap> GetMapApiByUid(string uid)
         {
-            MapVO vo = new MapVO();
             HttpClient httpClient = new HttpClient();
-            using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/maps{uid}");
+            using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/maps/{uid}");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
-            var map = JsonSerializer.Deserialize<MapsApi>(responseBody);
+            var map = JsonSerializer.Deserialize<InformationMap>(responseBody);
             return map;
         }
 

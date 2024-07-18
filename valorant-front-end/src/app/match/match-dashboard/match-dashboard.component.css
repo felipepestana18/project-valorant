@@ -1,12 +1,11 @@
 .border-custom{
 
-    border: 1px solid #ced4da;
+    border: 0.5px solid #6c757d;
     border-radius: 10px;
     margin-top: 2%;
     margin-left: 2%;
     margin-right: 4%;
-    background-color: (236, 232, 225);
-    background-color: #fff;
+    background-color: var(--bs-body-bg);
 }
 
 .border-card{
@@ -23,7 +22,6 @@ img{
 h5{
     font-weight: 600;
     font-size: 25px;
-    padding-top: 10px;
     padding-left: 8px;
     font-style: normal;
     color: #ffff;
@@ -41,4 +39,14 @@ h5{
 
 .margin-buttons{
     margin: 2%
+}
+
+/* Sepia */
+.hover  img {
+	opacity: 2;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	opacity: .4;
 }

@@ -7,9 +7,9 @@
 
 .border-custom{
     padding: 5%;
-    border: 1px solid #ced4da;
+    border: 1px solid #6c757d;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--bs-body-bg);
 }
 
 .img-top-1{

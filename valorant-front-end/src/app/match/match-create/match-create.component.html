@@ -1,22 +1,22 @@
 <div class="form">
     <div class="border-custom">
-        <h4 class="text-center">Create - Match</h4>
+        <h4 class="text-center">Criar - Partida</h4>
 
         <div class="border-0" class="">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="agent">Select the map</label>
+                    <label for="agent">Selecione o Agente</label>
                     <select class="form-control" id="agent" (change)="onChangeAgent()" [(ngModel)]="idAgent">
-                        <option selected>Please, select the agent</option>
+                        <option selected>Por favor, selecione o Agente</option>
                         <option *ngFor="let agent of agents"  [ngValue]="agent.id">
                             {{agent.name}}
                         </option>
                     </select>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="map">Select the map</label>
+                    <label for="map">Selecione o Mapa</label>
                     <select class="form-control" id="map" (change)="onChangeMap()" [(ngModel)]="idMap">
-                        <option selected>Please, select the map</option>
+                        <option selected>Por favor, selecione o mapa</option>
                         <option *ngFor="let map of maps"  [ngValue]="map.id">
                             {{map.name}}
                         </option>
@@ -29,8 +29,8 @@
                 <div class="flex">
                     <img src={{displayIconAgent}}  alt="..." height="150px" width="150px" class="img-thumbnail">
                     <div class="d-flex flex-column bd-highlight flex-element">
-                        <p>Name: <span><b>{{nameAgent}}</b></span></p>
-                        <p>Function: <span><b>{{descriptionAgent}}</b></span></p>
+                        <p>Nome: <span><b>{{nameAgent}}</b></span></p>
+                        <p>Função: <span><b>{{descriptionAgent}}</b></span></p>
                     </div>
                 </div>
             </div>
@@ -38,38 +38,38 @@
                 <div class="flex">
                     <img src={{displayIconMap}} alt="..." height="300px" width="250px" class="img-thumbnail">
                     <div class="d-flex flex-column bd-highlight flex-element">
-                        <p>Name: <span><b>{{nameMap}}</b></span></p>
-                        <p>Description: <span><b>{{descriptionMap}}</b></span></p>
+                        <p>Nome: <span><b>{{nameMap}}</b></span></p>
+                        <p>Descrição: <span><b>{{descriptionMap}}</b></span></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group col-md-4">
-              <label for="kilss">Kilss</label>
+              <label for="kilss">Abates</label>
               <input type="text" class="form-control" placeholder="Enter number of kilss"  [(ngModel)]="kills">
             </div>
             <div class="form-group col-md-4">
-              <label for="Deaths">Deaths</label>
+              <label for="Deaths">Mortes</label>
               <input type="number" class="form-control" placeholder="Enter number of deaths" [(ngModel)]="Death">
             </div>
             <div class="form-group col-md-4">
-                <label for="inputState">Match result</label>
+                <label for="inputState">Resultado da Partida</label>
                 <div class="flex">
                     <div>
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" [(ngModel)]="result" [value]="1">
-                        <label class="form-check-label margin-label" for="win">Win</label>
+                        <label class="form-check-label margin-label" for="win">Vitoria</label>
                     </div>
                     <div>
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" [(ngModel)]="result" [value]="0">
-                        <label class="form-check-label margin-label" for="lose">Lose</label>
+                        <label class="form-check-label margin-label" for="lose">Derrota</label>
                     </div>
               </div>
             </div>
         </div>
        <hr>
        <div class="text-end">
-            <button type="button" class=" btn btn-success" (click)="saveResultMatch()"> Create Match</button>
+            <button type="button" class=" btn btn-success" (click)="saveResultMatch()"> Criar Partida</button>
         </div>
     </div>
 </div>

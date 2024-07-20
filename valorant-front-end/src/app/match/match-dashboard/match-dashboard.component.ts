@@ -11,7 +11,6 @@ export class MatchDashboardComponent {
   constructor(private router: Router){}
 
   InformationAboutMatch(){
-    console.log('oi');
     this.router.navigateByUrl('match/rank');
   }
   

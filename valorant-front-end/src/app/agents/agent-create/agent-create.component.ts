@@ -18,6 +18,7 @@ export class AgentCreateComponent {
     function: string = '';
     description: string = '';
     displayIcon: string = '';
+    BodyImgURL: string = '';
 
 
     ngOnInit(): void {
@@ -31,6 +32,9 @@ export class AgentCreateComponent {
     }
     onChange(){
       let agent = this.data.find((agent: any) => agent.uuid === this.uui);
+      this.BodyImgURL = agent["fullPortrait"];
+
+      console.log(this.BodyImgURL);
       this.displayName = agent["displayName"];
       this.displayIcon = agent["displayIcon"];
       this.description = agent["description"];
@@ -42,7 +46,9 @@ export class AgentCreateComponent {
         uui: this.uui,
         name: this.displayName,
         description: this.description,
-        function: this.function
+        function: this.function,
+        BodyImgURL: this.BodyImgURL,
+        ThumbImgURL: this.displayIcon
       }
       this.AgentService.postData(data).subscribe((data) => {
         if (data) {

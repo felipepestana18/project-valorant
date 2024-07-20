@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MapsModule } from './maps/maps.module';
 import { AgentsModule } from './agents/agents.module';
+import { MatchModule } from './match/match.module';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AgentsModule } from './agents/agents.module';
     AppRoutingModule,
     HttpClientModule,
     MapsModule,
-    AgentsModule
+    AgentsModule,
+    MatchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

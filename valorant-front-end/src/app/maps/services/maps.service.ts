@@ -30,14 +30,10 @@ export class MapService {
  //   return this.http.get(this.url + 'get-agent');
  // }
 
-  getDataAgent() {
-
-    return this.http.get(this.url + 'get-all')
-  }
 
 
   getDataMap(){
-    return this.http.get(this.url + 'find-all')
+    return this.http.get(this.url + 'get-all')
   }
 
   postData(data: any) {

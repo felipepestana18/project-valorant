@@ -34,18 +34,11 @@ export class MapsCreateComponent {
     }
 
     saveMap(){
-
-      console.log("save");
-
-
          let data = {
           uuid: this.uuid,
           name: this.name,
+          ImageUrl: this.displayIcon
         }
-
-        console.log(data);
-
-
         this.MapService.postData(data).subscribe((data) => {
           if (data) {
             this.router.navigateByUrl('/maps');

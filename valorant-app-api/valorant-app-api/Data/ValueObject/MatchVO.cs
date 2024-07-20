@@ -4,8 +4,6 @@ namespace valorant_app_api.Data.ValueObject
 {
     public class MatchVO
     {
-
-
         public bool Result { get; set; }
 
         public int Kilss { get; set; }

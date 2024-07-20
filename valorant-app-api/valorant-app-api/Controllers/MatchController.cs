@@ -36,8 +36,9 @@ namespace valorant_app_api.Controllers
         }
 
         [HttpPost("create")]
-        public async Task<ActionResult<Match>> Create(MatchVO vo)
+        public async Task<ActionResult<MatchVO>> Create([FromBody] MatchVO vo)
         {
+        
             var match = await _matchRepository.Create(vo);
             if (match == null) return NotFound();
             return Ok(match);

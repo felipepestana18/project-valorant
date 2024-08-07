@@ -17,9 +17,12 @@ export class MatchService {
     })
   }
 
-  postData(data: any) {
-      console.log(data);
-      return this.http.post(this.url + 'create', data);
+  getDataMatch(uuid: any) {
+    console.log(uuid);
+    return this.http.get(this.url + 'get-all/' + uuid);
+  }
 
+  postData(data: any) {
+      return this.http.post(this.url + 'create', data);
   }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Text.RegularExpressions;
 using valorant_app_api.Data.ValueObject;
 using valorant_app_api.Model;
@@ -27,18 +28,19 @@ namespace valorant_app_api.Controllers
             return Ok(match);
         }
 
-        [HttpGet("get-all")]
-        public async Task<ActionResult<MatchVO>> GetAll()
+        [HttpGet("get-all/{uuid}")]
+        public async Task<ActionResult<Match>> GetAll(string uuid)
         {
-            var match = await _matchRepository.GetAll();
+            var match = await _matchRepository.GetAll(uuid);
             if (match == null) return NotFound();
             return Ok(match);
         }
 
+
         [HttpPost("create")]
         public async Task<ActionResult<MatchVO>> Create([FromBody] MatchVO vo)
         {
-        
+
             var match = await _matchRepository.Create(vo);
             if (match == null) return NotFound();
             return Ok(match);

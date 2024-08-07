@@ -45,10 +45,17 @@ namespace valorant_app_api.Repository
             return match;
         }
 
-        public async Task<IEnumerable<MatchVO>> GetAll()
+        public async Task<IEnumerable<Match>> GetAll(string uuid)
         {
-            var matches = await _context.Matches.ToListAsync();
-            return _mapper.Map<List<MatchVO>>(matches);
+
+            var matches = await _context.Matches.Where(x => x.Map.uuid == uuid).ToListAsync();
+
+            foreach (Match match in matches)
+            {
+                match.Characters = await _context.Characters.FirstOrDefaultAsync(x => x.Id == match.CharactersId);
+            }
+
+            return _mapper.Map<List<Match>>(matches);
         }
 
 

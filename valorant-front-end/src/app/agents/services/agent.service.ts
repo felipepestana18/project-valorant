@@ -34,6 +34,11 @@ export class AgentService {
     return this.http.get(this.url + 'get-all')
   }
 
+
+  getDataTop3(uuid: string, id: number){
+    return this.http.get(this.url + 'get-top3/' + uuid + "/" + id);
+  }
+
   getAgentById(id: number) {
     return this.http.get(this.url + '/' + 'get-by-id/'+ id);
   }

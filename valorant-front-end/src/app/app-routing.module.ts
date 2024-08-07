@@ -16,8 +16,10 @@ const routes: Routes = [
   { path: 'maps', component: MapsDashboardComponent, },
   { path: 'maps/create', component: MapsCreateComponent, },
   { path: 'match/dashboard', component: MatchDashboardComponent, },
-  { path: 'match/create', component: MatchCreateComponent, },
-  { path: 'match/rank', component: MatchRankComponent, },
+  { path: 'match/create/:uuid', component: MatchCreateComponent, },
+  { path: 'match/rank/:uuid/:name', component: MatchRankComponent, },
+  { path: 'match/rank/:uuid/:name/:id', component: MatchRankComponent, },
+  { path: 'match/rank/:uid', component: MatchRankComponent, },
 ];
 
 

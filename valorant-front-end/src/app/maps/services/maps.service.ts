@@ -36,6 +36,8 @@ export class MapService {
     return this.http.get(this.url + 'get-all')
   }
 
+
+
   postData(data: any) {
     return this.http.post(this.url + 'create', data);
   }

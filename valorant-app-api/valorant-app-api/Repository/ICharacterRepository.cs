@@ -11,8 +11,10 @@ namespace valorant_app_api.Repository
 
         Task<IEnumerable<CharacterVO>> Get(int id);
 
-        Task<CharacterVO> Create(CharacterVO vo);
+        Task<IEnumerable<TOP3Agent>> GetTop3Agents(string uuid, int id);     
 
+        Task<CharacterVO> Create(CharacterVO vo);
+  
         Task<CharacterVO> Update(CharacterVO vo);
 
         Task<bool> Delete(int id);

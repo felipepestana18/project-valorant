@@ -32,6 +32,8 @@ export class MatchCreateComponent {
   kills: Number = 0
   Death: Number = 0
 
+  uuid: string = ''
+
   ngOnInit(): void {
      this.getDataAgent();
      this.getDataMap();
@@ -52,35 +54,34 @@ export class MatchCreateComponent {
     this.displayIconAgent = agent["thumbImgURL"];
     this.nameAgent = agent["name"];
     this.descriptionAgent = agent["function"];
+    
   }
 
   onChangeMap(){
     let map = this.maps.find((maps: any) => maps.id === this.idMap);
+    console.log(map);
     this.displayIconMap = map["imageUrl"];
-    this.nameMap = map["Name"];
+    this.nameMap = map["name"];
     this.descriptionMap = 'A/B';
+    this.uuid = map["uuid"];
+
   }
-
-
   saveResultMatch(){
     let dateTime = new Date();
-
-    
     let data = {
       Result: true,
-      Kilss: 10,
-      Death: 1,
-      MapId: 7,
+      Kilss: this.kills,
+      Death: this.Death,
+      MapId: this.idMap,
       DateMatch: dateTime,
-      CharactersId: 6
+      CharactersId: this.idAgent
     }
 
-    
-
     this.MatchService.postData(data).subscribe((data) => {
+      console.log(data);
       if (data) {
-         data = '';
-        this.router.navigateByUrl('match/rank');
+
+        this.router.navigateByUrl(`match/rank/${this.uuid}/${this.nameMap}/${this.idMap}`);
       }
     })
   }

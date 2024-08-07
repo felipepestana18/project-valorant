@@ -39,6 +39,13 @@ namespace valorant_app_api.Controllers
             return Ok(task);
         }
 
+        [HttpGet("get-top3/{uuid}/{id}")]
+        public async Task<ActionResult<TOP3Agent>> GetTop3Agents(string uuid, int id)
+        { 
+            var match = await _characterRepository.GetTop3Agents(uuid, id);
+            if (match == null) return NotFound();
+            return Ok(match);
+        }
 
         [HttpPost("create")]
         public async Task<ActionResult<MapVO>> Create(CharacterVO vo)

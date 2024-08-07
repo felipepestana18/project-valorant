@@ -33,8 +33,6 @@ export class AgentCreateComponent {
     onChange(){
       let agent = this.data.find((agent: any) => agent.uuid === this.uui);
       this.BodyImgURL = agent["fullPortrait"];
-
-      console.log(this.BodyImgURL);
       this.displayName = agent["displayName"];
       this.displayIcon = agent["displayIcon"];
       this.description = agent["description"];

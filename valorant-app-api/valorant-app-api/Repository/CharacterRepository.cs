@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Text.Json.Nodes;
 using valorant_app_api.Data.ValueObject;
+using valorant_app_api.Model;
 using valorant_app_api.Model.Context;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -27,6 +28,14 @@ namespace valorant_app_api.Repository
             return _mapper.Map<List<CharacterVO>>(character);
         }
 
+
+        public async Task<IEnumerable<TOP3Agent>> GetTop3Agents(string uuid, int id)
+        {
+           var top3 = _context.TOP3Agents.FromSqlRaw("EXEC TOP3Agents @uuid = {0}, @id = {1}", uuid, id).ToList();
+            return top3;
+        }
+
+       
         public async Task<IEnumerable<CharacterVO>> GetAll()
         {
             var character = await _context.Characters.ToListAsync();
@@ -77,5 +86,7 @@ namespace valorant_app_api.Repository
             var agent = JsonSerializer.Deserialize<Rootobject>(responseBody);
             return agent;
         }
+
+
     }
 }

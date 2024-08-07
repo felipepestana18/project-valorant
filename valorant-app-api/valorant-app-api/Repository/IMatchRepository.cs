@@ -7,7 +7,7 @@ namespace valorant_app_api.Repository
     {
 
 
-        Task<IEnumerable<MatchVO>> GetAll();
+        Task<IEnumerable<Match>> GetAll(string uuid);
 
         Task<Match> Get(int id);
 

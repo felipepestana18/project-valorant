@@ -63,7 +63,7 @@ namespace valorant_app_api.Repository
         public async Task<MapsApi> GetMapsApi()
         {
             HttpClient httpClient = new HttpClient();
-            using HttpResponseMessage response = await httpClient.GetAsync("https://valorant-api.com/v1/maps");
+            using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/maps/?language=pt-BR");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             var maps = JsonSerializer.Deserialize<MapsApi>(responseBody);
@@ -73,7 +73,7 @@ namespace valorant_app_api.Repository
         public async Task<InformationMap> GetMapApiByUid(string uid)
         {
             HttpClient httpClient = new HttpClient();
-            using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/maps/{uid}");
+            using HttpResponseMessage response = await httpClient.GetAsync($"https://valorant-api.com/v1/maps/{uid}/?language=pt-BR");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             var map = JsonSerializer.Deserialize<InformationMap>(responseBody);

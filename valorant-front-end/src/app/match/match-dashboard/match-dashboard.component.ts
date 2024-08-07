@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatchService } from '../services/match.service';
+import { MapService } from 'src/app/maps/services/maps.service';
 
 @Component({
   selector: 'app-match-dashboard',
@@ -8,11 +10,27 @@ import { Router } from '@angular/router';
 })
 export class MatchDashboardComponent {
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private MapService: MapService){}
 
-  InformationAboutMatch(){
-    console.log('oi');
-    this.router.navigateByUrl('match/rank');
+
+  maps: any;
+
+  ngOnInit(): void {
+    this.getDataMatch();
+ }
+
+ getDataMatch(){
+  this.MapService.getDataMap().subscribe((data: any) => {
+
+    console.log(data);
+    this.maps = data
+  })
+ }
+
+
+  InformationAboutMatch(uuid: string, name: string, id: number)
+  { 
+    this.router.navigateByUrl(`match/rank/${uuid}/${name}/${id}`);
   }
   
   createNewMatch(){

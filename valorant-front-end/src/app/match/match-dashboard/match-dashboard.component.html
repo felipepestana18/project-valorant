@@ -1,43 +1,14 @@
 
 <div class="border-custom">
     <div class="text-end margin-buttons">
-        <button type="button" class=" btn btn-primary" (click)="createNewMatch()"> Create new Match</button>
+        <button type="button" class=" btn btn-primary" (click)="createNewMatch()"> Criar Uma Nova Partida</button>
     </div>
-    <h1 class="text-center">List of Maps</h1>
+    <h1 class="text-center">Lista de Mapas </h1>
     <hr>
     <div class="display">
-        <div class="border-card hover" (click)="InformationAboutMatch()">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
-        </div>
-        <div class="border-card hover">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
-        </div>
-        <div class="border-card hover">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
-        </div>
-        <div class="border-card hover">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
-        </div>
-       
-        <div class="border-card color-background">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
-        </div>
-        <div class="border-card color-background">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
-        </div>
-        <div class="border-card color-background">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
-        </div>
-        <div class="border-card color-background">
-            <figure><img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="300px"></figure>
-            <h5>Ascent</h5>
+        <div *ngFor="let map of maps" class="border-card hover" (click)="InformationAboutMatch(map.uuid, map.name, map.id)">
+            <figure><img src={{map.imageUrl}} alt="..." height="300px" width="300px"></figure>
+            <h5>{{map.name}}</h5>
         </div>
     </div>
 </div>

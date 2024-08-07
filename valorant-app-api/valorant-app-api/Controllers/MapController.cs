@@ -27,7 +27,7 @@ namespace valorant_app_api.Controllers
             return Ok(map);
         }
 
-        [HttpGet("find-all")]
+        [HttpGet("get-all")]
         public async Task<ActionResult<MapVO>> GetAll()
         {
             var task = await _mapRepository.GetAll();

@@ -1,10 +1,10 @@
 <div class="form">
     <div class="border-custom">
-        <h4 class="text-center">Create - Agent</h4>
+        <h4 class="text-center">Criar Agente</h4>
         <div class="border-0" class="">
-            <label for="exampleFormControlInput1" class="form-label">Select the Agent</label>
+            <label for="exampleFormControlInput1" class="form-label">Selecione o Agente</label>
             <select class="form-control" id="exampleFormControlSelect1" (change)="onChange()" [(ngModel)]="uui">
-                <option selected>Please, select the agent</option>
+                <option selected>Por favor, selecione o Agente</option>
                 <option *ngFor="let agent of data" [ngValue]="agent.uuid">
                     {{agent.displayName}}
                 </option>
@@ -15,15 +15,15 @@
 
                 <img src={{displayIcon}} alt="..." height="200px" width="200px" class="img-thumbnail">
                 <div class="d-flex flex-column bd-highlight flex-element">
-                    <p>Name: <span><b>{{displayName}}</b></span></p>
-                    <p>Function: <span><b>{{function}}</b></span></p>
-                    <p>Description: <span><b>{{description}}</b></span></p>
+                    <p>Nome: <span><b>{{displayName}}</b></span></p>
+                    <p>Função: <span><b>{{function}}</b></span></p>
+                    <p>Descrição: <span><b>{{description}}</b></span></p>
                 </div>
             </div>
 
             <hr>
             <div class="text-end">
-                <button type="button" class=" btn btn-success"  (click)="saveAgent()"> Create Agent</button>
+                <button type="button" class=" btn btn-success"  (click)="saveAgent()"> Criar Agente</button>
             </div>
         </div>
     </div>

@@ -1,79 +1,75 @@
 <div class="form">
     <div class="border-custom">
-        <h4 class="text-center">Create - Match</h4>
+        <h4 class="text-center">Criar - Partida</h4>
 
         <div class="border-0" class="">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="agent">Select the agent</label>
-                    <select class="form-control" id="agent">
-                        <option selected>Please, select the agent</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <label for="agent">Selecione o Agente</label>
+                    <select class="form-control" id="agent" (change)="onChangeAgent()" [(ngModel)]="idAgent">
+                        <option selected>Por favor, selecione o Agente</option>
+                        <option *ngFor="let agent of agents"  [ngValue]="agent.id">
+                            {{agent.name}}
+                        </option>
                     </select>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="map">Select the map</label>
-                    <select class="form-control" id="map">
-                        <option selected>Please, select the map</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <label for="map">Selecione o Mapa</label>
+                    <select class="form-control" id="map" (change)="onChangeMap()" [(ngModel)]="idMap">
+                        <option selected>Por favor, selecione o mapa</option>
+                        <option *ngFor="let map of maps"  [ngValue]="map.id">
+                            {{map.name}}
+                        </option>
                     </select>
                   </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" *ngIf="idAgent">
             <div class="col">
                 <div class="flex">
-                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png" alt="..." height="150px" width="150px" class="img-thumbnail">
+                    <img src={{displayIconAgent}}  alt="..." height="150px" width="150px" class="img-thumbnail">
                     <div class="d-flex flex-column bd-highlight flex-element">
-                        <p>Name: <span><b>Gekko</b></span></p>
-                        <p>Function: <span><b>Launcher</b></span></p>
+                        <p>Nome: <span><b>{{nameAgent}}</b></span></p>
+                        <p>Função: <span><b>{{descriptionAgent}}</b></span></p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" *ngIf="idMap">
                 <div class="flex">
-                    <img src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png" alt="..." height="300px" width="250px" class="img-thumbnail">
+                    <img src={{displayIconMap}} alt="..." height="300px" width="250px" class="img-thumbnail">
                     <div class="d-flex flex-column bd-highlight flex-element">
-                        <p>Name: <span><b>Ascent</b></span></p>
-                        <p>Description: <span><b>A/B Sites</b></span></p>
+                        <p>Nome: <span><b>{{nameMap}}</b></span></p>
+                        <p>Descrição: <span><b>{{descriptionMap}}</b></span></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group col-md-4">
-              <label for="kilss">Kilss</label>
-              <input type="text" class="form-control" placeholder="Enter number of kilss" id="kilss">
+              <label for="kilss">Abates</label>
+              <input type="number" class="form-control" placeholder="Enter number of kilss"  [(ngModel)]="kills">
             </div>
             <div class="form-group col-md-4">
-              <label for="Deaths">Deaths</label>
-              <input type="number" class="form-control" placeholder="Enter number of deaths" id="deaths">
+              <label for="Deaths">Mortes</label>
+              <input type="number" class="form-control" placeholder="Enter number of deaths" [(ngModel)]="Death">
             </div>
             <div class="form-group col-md-4">
-                <label for="inputState">Match result</label>
+                <label for="inputState">Resultado da Partida</label>
                 <div class="flex">
                     <div>
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
-                        <label class="form-check-label margin-label" for="win">Win</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" [(ngModel)]="result" [value]="1">
+                        <label class="form-check-label margin-label" for="win">Vitoria</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="0">
-                        <label class="form-check-label margin-label" for="lose">Lose</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" [(ngModel)]="result" [value]="0">
+                        <label class="form-check-label margin-label" for="lose">Derrota</label>
                     </div>
               </div>
-              </div>
+            </div>
         </div>
        <hr>
        <div class="text-end">
-            <button type="button" class=" btn btn-success"> Create Match</button>
+            <button type="button" class=" btn btn-success" (click)="saveResultMatch()"> Criar Partida</button>
         </div>
     </div>
 </div>

@@ -34,6 +34,15 @@ export class AgentService {
     return this.http.get(this.url + 'get-all')
   }
 
+
+  getDataTop3(uuid: string, id: number){
+    return this.http.get(this.url + 'get-top3/' + uuid + "/" + id);
+  }
+
+  getAgentById(id: number) {
+    return this.http.get(this.url + '/' + 'get-by-id/'+ id);
+  }
+
   postData(data: any) {
     return this.http.post(this.url + 'create', data);
   }
@@ -46,7 +55,5 @@ export class AgentService {
     return this.http.delete(this.url + 'delete/' + id);
   }
 
-  doneData(id: number) {
-    return this.http.put(this.url + 'done/' + id, '');
-  }
+
 }

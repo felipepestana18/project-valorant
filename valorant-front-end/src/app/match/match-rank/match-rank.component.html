@@ -1,22 +1,45 @@
 <div class="form">
     <div class="border-custom">
-        <h3 class="text-center text-top-trwee"> TOP 3</h3>
-        <div class="display-flex">
-            <div class="border-card top-two">
-                <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png"
+        <div class="text-end margin-buttons">
+            <button type="button" class=" btn btn-primary" (click)="createNewMatch()"> Criar Uma Nova Partida</button>
+        </div>
+        <h3 class="text-center text-top-trwee"> TOP 3 </h3>
+        <h5 class="text-center text-top-trwee"> Agentes no Mapa  {{name}} </h5>
+        <div class="display-flex" >
+            <div class="border-card top-two" *ngIf="top2Agent">
+                <img src={{top2Agent.bodyImgURL}}
                     alt="..." height="250px" width="100%">
 
-                <h5 class="font-custom">Gekko</h5>
+                <h5 class="font-custom">{{top2Agent.name}}</h5>
+                <p>
+                    Total de Abates: {{top2Agent.totalKills}}
+                </p>
+                <p>
+                    Media de Abates: {{top2Agent.totalKills}}
+                </p>
             </div>
-            <div class="border-card color-background top-one">
-                <img src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/fullportrait.png"
+            <div class="border-card color-background top-one" *ngIf="top1Agent">
+                <img src={{top1Agent.bodyImgURL}}
                     alt="..." height="250px" width="100%">
-                <h5 class="font-custom">Gekko</h5>
+                <h5 class="font-custom">{{top1Agent.name}}</h5>
+                <p>
+                    Total de Abates: {{top1Agent.totalKills}}
+                   
+                </p>
+                <p>
+                    Media de Abates: {{top1Agent.totalKills}}
+                </p>
             </div>
-            <div class="border-card color-background top-tree">
-                <img src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/fullportrait.png"
+            <div class="border-card color-background top-tree" *ngIf="top3Agent">
+                <img src={{top3Agent.bodyImgURL}}
                     alt="..." height="250px" width="100%">
-                <h5 class="font-custom">Gekko</h5>
+                <h5 class="font-custom">{{top3Agent.name}}</h5>
+                <p>
+                    Total de Abates: {{top3Agent.totalKills}}
+                </p>
+                <p>
+                    Media de Abates: {{top3Agent.totalKills}}
+                </p>
             </div>
         </div>
         <hr>
@@ -24,41 +47,30 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Agent</th>
-                    <th scope="col">Map</th>
-                    <th scope="col">Kilss</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col">Agente</th>
+                    <th scope="col">Abates</th>
+                    <th scope="col">Mortes</th>
+                    <th scope="col">Data da Partida</th>
+                    <th scope="col">Resultado</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Excluir</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody *ngFor="let match of matchs">
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Facture</td>
-                    <td>10</td>
-                    <td>20</td>
-                    <td>Date</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Facture</td>
-                    <td>10</td>
-                    <td>20</td>
-                    <td>Date</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Facture</td>
-                    <td>10</td>
-                    <td>20</td>
-                    <td>Date</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button></td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <th scope="row">{{match.id}}</th>
+                    <td>{{match.characters.name}}</td>
+                    <td>{{match.kilss}}</td>
+                    <td>{{match.death}}</td>
+                    <td>{{match.dateMatch | date: 'dd/MM/yyyy - HH:mm'}}</td>
+                    <td *ngIf="match.dateMatch">
+                        Vitoria
+                    </td>
+                    <td *ngIf="!match.dateMatch">
+                        Derrota
+                    </td>
+                    <td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
                 </tr>
             </tbody>
         </table>
